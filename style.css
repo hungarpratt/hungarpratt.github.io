@@ -1,0 +1,140 @@
+body {
+  margin: 0; 
+  background-color: #ffffff;
+}
+/*I created this container so that the pages wouldn't stretch out too wide. The "container" centers the website and leaves a white margin on either side. I got some help from ChatGPT with this problem.*/
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e2dad0;
+}
+
+h1 {
+  font-family: "Quicksand";
+  color: #3e3428;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: "Lora";
+  color: #a37850;
+  text-align: left;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: "Quicksand";
+  color: #c29061;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+p {
+  font-family: "Merriweather";
+  font-size: 16px;
+  color: #533e27;
+}
+
+ol {
+  font-family: "Merriweather";
+  font-size: 16px;
+  color: #533e27;
+}
+
+ul {
+  font-family: "Merriweather";
+  font-size: 16px;
+  color: #533e27;
+}
+
+img {
+  width: 150px;
+  border-style: dashed;
+  border-width: 4px;
+  border-color: #d6841f;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+/*The index image is for the small dog graphic on the index page, which should follow different guidelines than the other images*/
+
+.IndexImage {
+  float: left;
+  width: 100px;
+  border-style: dashed;
+  border-width: 4px;
+  border-color: #d6841f;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 0px 20px 0px 0px;
+}
+
+/*Code for the navigation bar*/
+
+.navbar {
+  max-width: 900px;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: space-around;
+  background-color: #d6841f;
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #58432a;
+}
+
+
+/* This is for a regular table, e.g. the one on Costs.html */
+
+table {
+  width: 80%;       
+    border-collapse: collapse; 
+    border: 3px solid #D6841F; 
+    font-family: "Merriweather";
+  font-size: 16px;
+  color: #533e27;
+}
+
+th, td {
+  border: 1px solid #D6841F;
+    padding: 8px;              
+    text-align: left;      
+}
+
+
+/* This code is specific to the table on the Product.html page. I've embedded image guidelines because these are unique to the table and should not apply to other images */
+.product-table {
+  border-collapse: collapse;
+  background-color: white;
+  margin: 0 auto; 
+  
+  /* I embedded image styling within this product because I want it to work differently than the other images, e.g. not have a border. This approach seems to work, but I'm getting an error message on the CSS validator. */
+ 
+  img {
+    text-align: right;
+    border-style: none;
+    border-color: none;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+.product-table td,
+.product-table th {
+  border: 3px solid #a37850;
+  padding: 8px;
+  vertical-align: top;
+  text-align: center;
+  width: 300px;
+}
